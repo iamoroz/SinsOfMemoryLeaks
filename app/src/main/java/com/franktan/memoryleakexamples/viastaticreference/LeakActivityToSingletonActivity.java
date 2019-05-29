@@ -16,7 +16,7 @@ public class LeakActivityToSingletonActivity extends AppCompatActivity {
     SomeSingletonManager someSingletonManager = null;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(@Nullable final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leak_context_to_singleton);
         // FIXME: fix option 1: instead of passing `this` to getInstance(), pass getApplicationContext()

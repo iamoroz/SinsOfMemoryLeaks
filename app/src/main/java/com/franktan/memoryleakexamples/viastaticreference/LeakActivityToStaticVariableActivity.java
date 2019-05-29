@@ -13,11 +13,11 @@ public class LeakActivityToStaticVariableActivity extends AppCompatActivity {
     static Activity activity = null;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leak_context_to_static_variable);
-        TextView textView = (TextView) findViewById(R.id.textView);
 
+        final TextView textView = (TextView) findViewById(R.id.textView);
         if (activity == null) {
             activity = this;
         }
