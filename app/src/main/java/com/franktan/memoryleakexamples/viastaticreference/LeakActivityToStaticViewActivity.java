@@ -12,7 +12,7 @@ public class LeakActivityToStaticViewActivity extends AppCompatActivity {
     private TextView label;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         label = new TextView(this);

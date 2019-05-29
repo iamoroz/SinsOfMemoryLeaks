@@ -10,13 +10,13 @@ public class LeakActivityToStaticInnerClassActivity extends AppCompatActivity {
     private SomeInnerClass someInnerClass;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leak_static_reference_to_inner_class);
 
         someInnerClass = new SomeInnerClass();
     }
 
-    class SomeInnerClass {
+    private class SomeInnerClass {
     }
 }

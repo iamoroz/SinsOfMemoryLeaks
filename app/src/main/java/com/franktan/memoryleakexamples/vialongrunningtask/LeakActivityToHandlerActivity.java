@@ -14,7 +14,7 @@ public class LeakActivityToHandlerActivity extends AppCompatActivity {
     private final MyRunnable myRunnable = new MyRunnable();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leak_to_handler);
 

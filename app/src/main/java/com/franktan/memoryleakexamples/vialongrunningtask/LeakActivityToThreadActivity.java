@@ -11,7 +11,7 @@ public class LeakActivityToThreadActivity extends AppCompatActivity {
     private MyThread myThread = new MyThread();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leak_to_runnable);
 

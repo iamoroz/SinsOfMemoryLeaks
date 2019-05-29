@@ -12,7 +12,7 @@ public class LeakActivityToAsyncTaskActivity extends AppCompatActivity {
     private DoNothingTask doNothingTask = null;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leak_to_async_task);
 
